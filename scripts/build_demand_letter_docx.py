@@ -113,16 +113,48 @@ def build():
          size=12, bold=True, space_after=6)
 
     para(doc, "■ 녹음 기본정보",
-         size=11, bold=True, left_indent=0.5, space_after=2)
-    para(doc,
-         "· 녹음 일시 : 2023년 3월 15일 (수)\n"
-         "· 녹음 장소 : (가칭)연신내지역주택조합 추진위원회 사무실 "
-         "(서울 은평구 통일로 80길 17-7, 불광동)\n"
-         "· 녹음 시간 : 총 47분 53초\n"
-         "· 면담자  : 갑 ─ 통고인 고영진  /  을 ─ 주식회사 다원에코코리아 "
-         "업무대행총괄 김성수(金成洙) 이사\n"
-         "· 녹음 매체 : 통고인 휴대전화 음성녹음 (원본 파일 보관 중)",
-         size=10, left_indent=0.9, space_after=8)
+         size=11, bold=True, left_indent=0.5, space_after=4)
+
+    info_table = doc.add_table(rows=7, cols=2)
+    info_table.style = "Light Grid Accent 1"
+    info_rows = [
+        ("녹음 일시", "2023년 3월 15일 (수)"),
+        ("녹음 장소",
+         "(가칭)연신내지역주택조합 추진위원회 사무실 "
+         "(서울특별시 은평구 통일로 80길 17-7, 불광동)"),
+        ("녹음 시간", "총 47분 53초"),
+        ("녹음 매체",
+         "휴대전화 음성녹음 (파일명: Bulgwangdong_2.m4a, 24.6MB) ─ 원본 보관 중"),
+        ("녹  음  자",
+         "조합원 본인 ‘고영진(高永鎭)’ ─ 이하 ‘갑(甲)’"),
+        ("상  대  방",
+         "① 조합 안내직원(여) ─ 이하 ‘을₁’ / "
+         "② 김 성 수(金成洙) 이사 ─ (가칭)연신내지역주택조합 업무대행사 "
+         "‘주식회사 다원에코코리아’ 업무대행총괄 ─ 이하 ‘을₂’"),
+        ("녹음 경위",
+         "갑(甲) 고영진이 추가분담금 4,000만 원 납부 거부 및 ‘조합 가입계약의 "
+         "해지(탈퇴)’를 위하여 연신내지역주택조합 사무실을 직접 방문하여 "
+         "업무대행총괄 김성수 이사와 약 47분간 면담하였으며, 그 자리에서 갑이 "
+         "구두로 탈퇴 의사를 표시한 데에 더하여 조합이 비치한 ‘조합원 탈퇴서’에 "
+         "자필로 서명·날인하여 김성수 이사에게 직접 교부함으로써 본 일자로 "
+         "가입계약이 적법하게 해지(탈퇴 완료)되었음. 면담의 전 과정을 본인의 "
+         "휴대전화로 녹음한 것이 본 음성파일임."),
+    ]
+    for i, (k, v) in enumerate(info_rows):
+        row = info_table.rows[i]
+        cell_k = row.cells[0]
+        cell_v = row.cells[1]
+        cell_k.width = Cm(3.4)
+        cell_v.width = Cm(13.2)
+        cell_k.text = ""
+        cell_v.text = ""
+        p_k = cell_k.paragraphs[0]
+        r_k = p_k.add_run(k)
+        kfont(r_k, size=10, bold=True)
+        p_v = cell_v.paragraphs[0]
+        r_v = p_v.add_run(v)
+        kfont(r_v, size=10)
+    doc.add_paragraph()
 
     para(doc, "■ 녹취록으로 객관적으로 확인되는 핵심 사실",
          size=11, bold=True, left_indent=0.5, space_after=2)
