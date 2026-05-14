@@ -1,7 +1,7 @@
 """연신내지역주택조합 분담금 반환 청구 내용증명 docx 생성."""
 
 from docx import Document
-from docx.shared import Pt, Cm
+from docx.shared import Pt, Cm, RGBColor
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.oxml.ns import qn
 from docx.oxml import OxmlElement
