@@ -75,12 +75,12 @@ def build():
     # 수신인
     para(doc, "[수    신    인]", size=12, bold=True, space_after=4)
     para(doc,
-         "1. (가칭)연신내지역주택조합 추진위원회   귀중\n"
+         "1. (가칭)연신내지역주택조합 추진위원회 귀중\n"
          "    등록번호 : 116-82-67485\n"
          "    주    소 : 서울특별시 은평구 통일로 80길 17-7 (불광동)",
          size=11, left_indent=0.5, space_after=6)
     para(doc,
-         "2. 주식회사 다원에코코리아 업무대행총괄 김 성 수(金成洙) 이사   귀하\n"
+         "2. 주식회사 다원에코코리아 업무대행총괄 김성수(金成洙) 이사 귀하\n"
          "    (위 회사에 대한 통지 수령권자 겸 본 사안 업무대행 책임자 "
          "─ 회사 및 개인 양자에 대한 통지)\n"
          "    등록번호 : 서울-주택2018-0062 (위 ‘1’항 조합의 업무대행사)\n"
@@ -90,10 +90,10 @@ def build():
     # 발신인
     para(doc, "[발    신    인]", size=12, bold=True, space_after=4)
     para(doc,
-         "성      명 : 고  영  진 (高永鎭)\n"
+         "성      명 : 고영진 (高永鎭)\n"
          "주      소 : 경기도 안양시 안양천서로 177\n"
          "연  락  처 : 010-2011-6688\n"
-         "조합원번호 :                            ( 25평형 / 2019년 12월 가입 / 납입 총액 90,000,000원 )",
+         "조합원번호 :                  ( 25평형 / 2019년 12월 가입 / 납입 총액 90,000,000원 )",
          size=11, left_indent=0.5, space_after=14)
 
     hr(doc)
@@ -120,8 +120,7 @@ def build():
     info_rows = [
         ("녹음 일시", "2023년 3월 15일 (수)"),
         ("녹음 장소",
-         "(가칭)연신내지역주택조합 추진위원회 사무실 "
-         "(서울특별시 은평구 통일로 80길 17-7, 불광동)"),
+         "연신내지역주택조합 업무대행사 사무실 (서울특별시 은평구 불광동 소재)"),
         ("녹음 시간", "총 47분 53초"),
         ("녹음 매체",
          "휴대전화 음성녹음 (파일명: Bulgwangdong_2.m4a, 24.6MB) ─ 원본 보관 중"),
@@ -425,8 +424,7 @@ def build():
          "(이후 변제일까지 매일 연 6%의 지연손해금이 추가 가산됨)",
          size=11, left_indent=0.7, space_after=6)
     para(doc,
-         "         ▷ 반 환 계 좌 :   국 민 은 행     예금주 : 고 영 진     "
-         "계좌번호 : 2 5 5 0 0 2 0 4 0 1 7 4 2 2",
+         "    ▷ 반환계좌 : 국민은행 / 예금주 고영진 / 계좌번호 25500204017422",
          size=11, bold=True, left_indent=1.0, space_after=10)
 
     para(doc,
@@ -479,12 +477,12 @@ def build():
          size=11, space_after=20)
 
     # 작성일
-    para(doc, "                                                          2026년     월     일",
+    para(doc, "2026년     월     일",
          size=11, align=WD_ALIGN_PARAGRAPH.RIGHT, space_after=10)
 
-    para(doc, "통  고  인 :  고  영  진             (인)",
+    para(doc, "통고인 : 고영진 (인)",
          size=12, bold=True, align=WD_ALIGN_PARAGRAPH.RIGHT, space_after=4)
-    para(doc, "                  연락처 :   010-2011-6688                ",
+    para(doc, "연락처 : 010-2011-6688",
          size=11, align=WD_ALIGN_PARAGRAPH.RIGHT, space_after=20)
 
     hr(doc)
