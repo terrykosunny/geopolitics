@@ -755,8 +755,11 @@ def build():
     # 표제
     para(doc, "녹  취  록 (全文)",
          size=20, bold=True, align=WD_ALIGN_PARAGRAPH.CENTER, space_after=4)
-    para(doc, "— 연신내지역주택조합 면담 전체 verbatim 전문(全文) —",
-         size=11, bold=True, align=WD_ALIGN_PARAGRAPH.CENTER, space_after=10)
+    para(doc, "— 연신내지역주택조합 가입계약 해지(탈퇴) 면담 전체 verbatim 전문(全文) —",
+         size=11, bold=True, align=WD_ALIGN_PARAGRAPH.CENTER, space_after=4)
+    para(doc, "(2023년 3월 15일자 가입계약 적법 해지 — 동 일자로 탈퇴 완료)",
+         size=10, bold=True, align=WD_ALIGN_PARAGRAPH.CENTER,
+         color=RGBColor(0xC0, 0x00, 0x00), space_after=10)
 
     hr(doc)
 
@@ -772,8 +775,11 @@ def build():
          "을₁ — 조합 안내직원(여) / "
          "을₂ — 김성수(金成洙) 이사 (연신내지역주택조합 업무대행총괄)"),
         ("녹음 경위",
-         "갑이 추가분담금 4,000만 원 납부 거부 및 조합 탈퇴 의사 표명을 위하여 "
-         "조합 사무실 방문, 면담 전 과정을 본인 휴대전화로 녹음."),
+         "갑이 추가분담금 4,000만 원 납부 거부 및 ‘조합 가입계약의 해지(탈퇴)’를 위하여 "
+         "조합 사무실을 직접 방문하여 업무대행총괄 김성수 이사와 면담함. "
+         "면담 자리에서 갑이 구두로 ‘탈퇴’의 의사를 표시하고 을₂(김성수 이사)가 이를 "
+         "수령·확인하여 2023.3.15.자로 가입계약이 적법하게 해지(=탈퇴 완료)됨. "
+         "면담의 전 과정을 본인 휴대전화로 녹음한 것이 본 음성파일임."),
         ("작 성 자", "갑(甲) 고영진"),
         ("작 성 일", "       년       월       일"),
     ]
