@@ -1,4 +1,4 @@
-"""연신내지역주택조합 면담 전체 녹취록(verbatim) docx 생성."""
+"""연신내지역주택조합 면담 전체 녹취록(축자기록·전문) docx 생성."""
 
 from docx import Document
 from docx.shared import Pt, Cm, RGBColor
@@ -74,7 +74,7 @@ def dialogue(doc, time, speaker, content):
     kfont(r_content, size=10)
 
 
-# 클로바노트 출력에서 정리한 전체 대화 — verbatim
+# 클로바노트 출력에서 정리한 전체 대화 — 원문 그대로(축자기록)
 # Participants 1 = 안내직원(을₁)과 갑이 혼재 → 문맥상 분리
 # Participants 2 = 김성수 이사(을₂)
 DIALOGUE = [
@@ -755,7 +755,7 @@ def build():
     # 표제
     para(doc, "녹  취  록 (全文)",
          size=20, bold=True, align=WD_ALIGN_PARAGRAPH.CENTER, space_after=4)
-    para(doc, "— 연신내지역주택조합 가입계약 해지(탈퇴) 면담 전체 verbatim 전문(全文) —",
+    para(doc, "— 연신내지역주택조합 가입계약 해지(탈퇴) 면담 전 과정 축자(逐字) 전문(全文) —",
          size=11, bold=True, align=WD_ALIGN_PARAGRAPH.CENTER, space_after=4)
     para(doc, "(2023년 3월 15일자 가입계약 적법 해지 — 동 일자로 탈퇴 완료)",
          size=10, bold=True, align=WD_ALIGN_PARAGRAPH.CENTER,
@@ -801,8 +801,9 @@ def build():
     # 일러두기
     para(doc, "■ 일러두기", size=12, bold=True, space_after=4)
     notice = [
-        "1. 본 녹취록은 음성녹음 원본(파일명: Bulgwangdong_2.m4a)을 STT 1차 변환한 후, "
-        "녹음자가 직접 청취하며 verbatim 원칙으로 정리한 것이다.",
+        "1. 본 녹취록은 음성녹음 원본(파일명: Bulgwangdong_2.m4a)을 음성인식 도구로 "
+        "1차 자동 변환한 후, 녹음자가 직접 청취하며 ‘원문 그대로(축자) 옮겨 적기’ 원칙에 "
+        "따라 정리한 것이다.",
         "2. 시간코드 [00:00] 는 녹음 시작 시점부터의 분(分):초(秒) 표기이다.",
         "3. 화자 표기는 ‘갑(甲) = 고영진’, ‘을₁ = 조합 안내직원’, ‘을₂ = 김성수 이사’를 따른다.",
         "4. (…) 안의 보충 설명은 문맥 이해를 돕기 위한 작성자의 주석이며, 발언 자체는 아니다.",
