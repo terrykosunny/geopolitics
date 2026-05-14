@@ -76,7 +76,7 @@ def build():
     para(doc, "[수    신    인]", size=12, bold=True, space_after=4)
     para(doc,
          "1. (가칭)연신내지역주택조합 추진위원회   귀중\n"
-         "    고유번호 : 448-80-00830\n"
+         "    등록번호 : 116-82-67485\n"
          "    주    소 : 서울특별시 은평구 통일로 80길 17-7 (불광동)",
          size=11, left_indent=0.5, space_after=6)
     para(doc,
